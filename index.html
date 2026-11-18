@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aXet Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <h1>Calculator</h1>
+
+        <input
+            type="number"
+            id="number1"
+            placeholder="First number"
+        >
+
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+        </select>
+
+        <input
+            type="number"
+            id="number2"
+            placeholder="Second number"
+        >
+
+        <button onclick="calculate()">
+            Calculate
+        </button>
+
+        <button onclick="clearCalculator()">
+            Clear
+        </button>
+
+        <h2>Result</h2>
+
+        <div id="result">
+            No calculation performed
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
